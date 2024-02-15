@@ -8,12 +8,12 @@ I followed a tutorial (by GreatStack on youtube) to help jump start the process 
 I purchased a domain name for use with AWS Route 53 from a third party website. Because of this, I had to create a hosted zone and use the name servers that AWS provided to link to the domain name provided by the website. We then have to create a record in Route53 to route requests to our s3 website when someone goes to our domain. 
 
 ### Diagram 1: Progress So Far
-![gettingacustomdomaindiagram](https://github.com/sauravnakarmi/AWS-Static-Website/assets/70821330/aabbc5de-f89f-47cc-a634-4b10bd54bf99)
+![diagram1](https://github.com/sauravnakarmi/AWS-Static-Website/assets/70821330/193d8cb5-a3f7-44b9-8dbd-44473550533e)
 
 ### Part 3: Setting Up SSL/HTTPS and Creating a CloudFront Distribution
 In order to have a proper certificate for our cloud front distribution we need to be in us-east-1 for our region. To validate our certificate we need to add a CNAME record into our Route 53. The certificate itself cannot be used on the S3 bucket we have created, instead, we need to create a cloud front distribution to attach the certificate to. The origin of our cloud front distribution will be our s3 bucket. We also need to make sure we redirect HTTP to HTTPS, choose a WAF option, add a cname, use our custom SSL certificate that we created, and make sure our root object is set to our index.html page. To properly use our domain name for access to our website we need to update our route 53 record. Instead of pointing to our S3 bucket, our A record needs to point to our cloud front distribution. 
 
 ### Diagram 2: Final Infrastructure
-![finaldiagram](https://github.com/sauravnakarmi/AWS-Static-Website/assets/70821330/e5c0817e-6115-4adf-94f4-f5d90a9809e8)
+![finaldiagram](https://github.com/sauravnakarmi/AWS-Static-Website/assets/70821330/72949cfe-c1d2-450a-b014-361526114fb0)
 
 ### Conclusion 
