@@ -1,7 +1,7 @@
 ## Overview
 This project aims to host a highly available static website using HTML, CSS, Javascript, Simple Storage Service (S3), Route 53, CloudFront Distribution and Certificates Manager. The primary goal is to achieve a secure, highly available website. I followed a tutorial from Tiny Technical Tutorials. 
 
-### Part 1: Setting up S3 for static website hosting
+### Part 1: Setting up S3 for static website hosting-
 I followed a tutorial (by GreatStack on youtube) to help jump start the process of building the website using HTML, CSS, and Javascript code. I then took that code and uploaded it to an S3 bucket and configured S3 bucket for public access. When creating an S3 bucket an important stipulation is that the bucket name has to be the same as the domain name that you register. 
 
 ### Part 2: Getting a custom domain
@@ -17,3 +17,4 @@ In order to have a proper certificate for our cloud front distribution we need t
 ![finaldiagram](https://github.com/sauravnakarmi/AWS-Static-Website/assets/70821330/72949cfe-c1d2-450a-b014-361526114fb0)
 
 ### Conclusion 
+Creating a static website in AWS has provided me with a comprehensive understanding of cloud-based hosting and infrastructure management. Throughout this process, I've learned how to leverage AWS services like Amazon S3, Amazon CloudFront, and AWS Certificates Manager to deploy, scale, and secure a static website efficiently. Additionally, configuring domain routing, setting up SSL certificates, and optimizing performance have emphasized the importance of scalability, reliability, and security in web hosting. This experience has not only expanded my technical skills but also deepened my appreciation for the flexibility and power of cloud computing. As I conclude this project, I am confident in my ability to utilize AWS effectively for hosting static websites and am eager to continue exploring its capabilities in future endeavors.
